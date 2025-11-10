@@ -1,0 +1,6 @@
+@ngnet_HostAddress = http://localhost:5276
+
+GET {{ngnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
