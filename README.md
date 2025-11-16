@@ -22,7 +22,6 @@ The backend is in the AppName folder, the frontend is in the AppName/Frontend fo
 
 Add a `.gitignore` file as needed. In this repo, these contents are used:
 
-```
 ```.gitignore
 # macOS specific desktop files.
 **/.DS_Store
