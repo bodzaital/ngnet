@@ -56,6 +56,18 @@
       "Segoe UI Symbol";
   }
 
+  h2 {
+    font-size: 2.5rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 2.5rem 0 0 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
   p {
     margin: 0;
     color: var(--gray-700);
@@ -232,6 +244,10 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <h2>Weather Forecast</h2>
+      @for (item of weatherForecast; track $index) {
+        <p>{{ item.date }} - {{ item.summary }}: {{ item.temperatureC }}&deg;C ({{ item.temperatureF }}&deg;F)</p>
+      }
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
